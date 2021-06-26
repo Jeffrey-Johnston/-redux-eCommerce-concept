@@ -7,7 +7,7 @@ import classes from "./ProductItem.module.css";
 const ProductItem = (props) => {
   const dispatch = useDispatch();
 
-  const { title, price, description, image, id } = props;
+  const { title, price, image, id } = props;
 
   const addToCartHandler = () => {
     dispatch(
@@ -27,8 +27,6 @@ const ProductItem = (props) => {
 
           <div className={classes.price}>${price.toFixed(2)}</div>
         </header>
-        {/* <p>{description}</p> */}
-
         <div className={classes.actions}>
           <img src={image} alt="" />
           <button onClick={addToCartHandler}>Add to Cart</button>
