@@ -1,4 +1,5 @@
 .button {
+  width: fit-content;
   background-color: transparent;
   border-color: #1ad1b9;
   color: #1ad1b9;
@@ -18,4 +19,14 @@
   border-radius: 30px;
   padding: 0.15rem 1.25rem;
   color: #1d1d1d;
+}
+
+.myCart {
+  display: none;
+}
+
+@media screen and (min-width: 550px) {
+  .myCart {
+    display: inline;
+  }
 }
